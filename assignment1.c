@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "uselessheader.h"
 
 float average(){
 
