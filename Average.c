@@ -1,23 +1,27 @@
 #include <stdio.h>
 #include "IDKWhyThisIsNecessary.h"
 
-float average(float temp)
+int average(float temp)
 {
-	temp = temp/10;
-	printf("Average of your values:%f",temp);
-	return 0;
+	float temp1;
+	temp1=(float)temp/10;
+	printf("Average of your values:%f",temp1);
 }
 
 int main()
 {
-	int temp1, temp, i;
+	int temp;
+	float temp1;
 	temp1=0;
-	temp=0
-	for(i=0; i<10; i++){
-		scanf("Enter 10 number:%f",&temp);
-		temp1+=temp
-		printf("number remain to be entered:%d",(9-i));
+	temp=0;
+	printf("Enter 10 number:");
+	for(int i=0; i<10; i++){
+		scanf("%d", &temp);
+		temp1 += temp;
+		printf("%f\n", temp1);
+		printf("number remain to be entered:%d\n",(9-i));
 }
+	printf("\nAccumulated Value:%f\n",temp1);
 	average(temp1);
 	return 0;
 }
