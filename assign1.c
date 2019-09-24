@@ -14,6 +14,7 @@ float takeaverage()
 
 int main()
 {
+	printf("Enter 10 integers:");
 	printf("%f\n", takeaverage());
 	return 0;
 }
